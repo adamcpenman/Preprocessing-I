@@ -58,5 +58,120 @@ html, body {
 	font-size: 62.5%;
 	}
 
+#wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.centered-layout() { 
+display: flex;
+flex-flow: row wrap; 
+}
+
+.boxes() {
+	width: 90%;
+	height: 2px;
+	.animation-slide();
+}
+
+.animation-slide() {
+    animation-name: slidein; 
+    animation-duration: 5s;
+	
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 90%;
+        }
+    to {
+        margin-right: 0%;
+        width: 90%;
+        }
+    }
+}
+
+.nav-bar {
+	.centered-layout();
+	justify-content: flex-end;
+	word-spacing: 5rem;
+
+	nav {
+		font-size: 1.4rem;
+		}
+		a {
+		text-decoration: none;
+		color: black;
+		}
+	}
+
+	header { 
+		 border: 1px solid black; 
+	background: silver;
+	padding-bottom: 3rem;
+	.top-header {
+		border: 1px solid black;
+
+			.pride {
+		width: 30rem;
+		border-radius: 50%;
+		margin: 2.5rem;
+		border: 1px solid black;
+	}
+	}
+
+	h1 {
+		font-size: 3rem;
+		margin: 1.5rem;
+	}
+	h3 {
+		font-size: 2rem;
+		margin: 1rem;
+		border-bottom: 1px solid black;
+	
+	}
+		header .btmheader {
+			display:flex;
+			flex-flow: column wrap;
+		}
+
+		.btm-header {
+			font-size: 1.5rem;
+			width: 400px;
+		
+		button {
+		     width: 10rem;
+			height: 3rem;
+			background-color: grey;
+			color: white;
+			font-weight: bold;
+			border: 1px solid black;
+		}
+		}
+	}
+
+	.middle {
+.centered-layout();
+justify-content: space-between;
+
+	.box1 {
+		font-size: 2.5rem;
+		width: 50rem;
+
+	}
+
+
+
+	.box2 {
+		font-size: 2.5rem;
+		width: 50rem;
+		
+	}
+
+	li {
+		border: 1px solid black;
+		line-height: 4rem;
+	}
+	}
 
 
