@@ -144,187 +144,81 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-content: center;
-  justify-content: flex-end;
-  word-spacing: 5rem;
+  background-color: #8B8BAE;
+  border: 1px solid #9ED0E6;
 }
 .nav-bar nav {
-  font-size: 1.4rem;
+  word-spacing: 6rem;
+  font-size: 1.5rem;
 }
 .nav-bar a {
   text-decoration: none;
-  color: black;
+  color: #424342;
 }
-header {
-  border-radius: 2rem;
-  background: #f7fdff;
-  padding-bottom: 3rem;
-}
-header .top-header .box1 {
-  width: 100%;
-  height: 2px;
-  animation-name: slidein;
-  animation-duration: 5s;
-  background-color: red;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-header .top-header .box2 {
-  width: 100%;
-  height: 2px;
-  animation-name: slidein;
-  animation-duration: 5s;
-  background-color: orange;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-header .top-header .box3 {
-  width: 100%;
-  height: 2px;
-  animation-name: slidein;
-  animation-duration: 5s;
-  background-color: yellow;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-header .top-header .box4 {
-  width: 100%;
-  height: 2px;
-  animation-name: slidein;
-  animation-duration: 5s;
-  background-color: green;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-header .top-header .box5 {
-  width: 100%;
-  height: 2px;
-  animation-name: slidein;
-  animation-duration: 5s;
-  background-color: blue;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-header .top-header .box6 {
-  width: 100%;
-  height: 2px;
-  animation-name: slidein;
-  animation-duration: 5s;
-  background-color: indigo;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-header .top-header .pride {
-  width: 30rem;
-  border-radius: 50%;
-  margin: 2.5rem;
-  border: 1px solid black;
-  box-shadow: 5px 5px;
-}
-header h1 {
-  font-size: 5rem;
-  margin: 1.5rem;
-}
-header h3 {
-  font-size: 2rem;
-  margin: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid black;
-}
-header header .btmheader {
+.top-header {
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.4rem;
+  background-color: #B8B3E9;
+  border: 1px solid #9ED0E6;
 }
-header .btm-header {
-  font-size: 1.5rem;
-  width: 400px;
-  margin-top: 1rem;
+.top-header h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-header .btm-header button {
-  width: 10rem;
-  height: 3rem;
-  background-color: grey;
-  color: white;
-  font-weight: bold;
-  border: 1px solid black;
-  margin-top: 2rem;
+.top-header .pride {
+  width: 33rem;
+  height: 38rem;
+  border-radius: 50%;
+  border: 1px solid #9ED0E6;
+}
+.top-header h3 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .middle {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-content: center;
-  margin-top: 3rem;
-}
-.middle .box1 {
-  font-size: 2.5rem;
-  width: 50rem;
-}
-.middle .box2 {
-  font-size: 2.5rem;
-  width: 50rem;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #D7C9FF;
+  border: 1px solid #9ED0E6;
 }
 .middle h2 {
-  font-size: 3.5rem;
+  font-size: 1.8rem;
+  margin: 1rem;
 }
-.middle li {
-  border: 1px solid lightgrey;
-  line-height: 4rem;
+.middle .box1 {
+  width: 70%;
+}
+.middle .box2 {
+  width: 30%;
+  border: 1px solid #9ED0E6;
+  text-align: left;
+}
+.middle .box2 h3 {
+  background-color: white;
+}
+.middle .box2 p {
+  background-color: grey;
 }
 .bottom {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-content: center;
+  border: 1px solid black;
+  width: 50%;
+  margin-left: 50rem;
 }
-.bottom .box3 {
-  font-size: 2.5rem;
-  width: 50rem;
+.bottom h2 {
+  font-size: 1.8rem;
 }
