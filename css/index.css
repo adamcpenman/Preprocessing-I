@@ -138,6 +138,9 @@ body {
 #wrapper {
   width: 90%;
   margin: 0 auto;
+  background-color: #F1F2F3;
+  font-family: 'Exo', sans-serif;
+  font-family: 'Vollkorn', serif;
 }
 .nav-bar {
   display: flex;
@@ -152,7 +155,7 @@ body {
 }
 .nav-bar a {
   text-decoration: none;
-  color: #424342;
+  color: #2C363F;
 }
 .top-header {
   display: flex;
@@ -164,12 +167,12 @@ body {
 .top-header h1 {
   font-size: 6rem;
   margin: 2rem;
-  color: black;
+  color: #2C363F;
 }
 header h3 {
   font-size: 3rem;
   margin: 2rem;
-  color: black;
+  color: #2C363F;
   text-align: center;
   border-bottom: 1px solid #9ED0E6;
   padding-bottom: 2rem;
@@ -183,13 +186,22 @@ header h3 {
 }
 .middle .box1 {
   width: 45rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  width: 90%;
+  background-color: #E0DDCF;
 }
 .middle .box1 h2 {
   font-size: 3.5rem;
 }
 .middle .box1 p {
   font-size: 3rem;
+  background-color: #B592A0;
+  border: 1px solid #9ED0E6;
+}
+.middle .mid {
+  background-color: #BCC4DB;
 }
 .middle h2 {
   font-size: 3.5rem;
@@ -198,12 +210,13 @@ header h3 {
 .middle .box2 {
   width: 40rem;
   margin-bottom: 0.5rem;
-}
-.middle .box2 h3 {
-  font-size: 2.5rem;
+  border: 1px solid #9ED0E6;
+  width: 90%;
+  background-color: #BBC8CA;
 }
 .middle .box2 p {
   font-size: 2rem;
+  line-height: 2.5rem;
 }
 .bottom {
   display: flex;
@@ -221,7 +234,7 @@ header h3 {
   margin-bottom: 1rem;
 }
 .bottom .box2 {
-  width: 110rem;
+  width: 120rem;
   background-color: #D7C9FF;
   margin-bottom: 1rem;
   border: 1px solid #9ED0E6;

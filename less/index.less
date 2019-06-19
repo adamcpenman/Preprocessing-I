@@ -61,6 +61,10 @@ font-size: 62.5%;
 #wrapper {
 width: 90%;
 margin: 0 auto;
+background-color: #F1F2F3;
+font-family: 'Exo', sans-serif;
+font-family: 'Vollkorn', serif;
+
 
 }
 
@@ -72,6 +76,8 @@ margin: 0 auto;
 }
 
 @borderr: 1px solid #9ED0E6;
+
+@color-font: #2C363F;
 
 
 
@@ -88,7 +94,7 @@ margin: 0 auto;
 
 	a {
 		text-decoration: none;
-		color: #424342;
+		color: @color-font;
 }
 }
 
@@ -99,7 +105,7 @@ margin: 0 auto;
 		h1 {
 			font-size: 6rem;
 			margin: 2rem;
-			color: black;
+			color: @color-font;
 			}
 }
 
@@ -107,7 +113,7 @@ margin: 0 auto;
 header	h3 {
 		font-size: 3rem;
 		margin: 2rem;
-		color: black;
+		color:@color-font;
 		text-align: center;
 		border-bottom: @borderr;
 		padding-bottom: 2rem;
@@ -116,37 +122,52 @@ header	h3 {
 .middle {
 	.custom-layout (center, center);
 	text-align: center;
-
+	
 	.box1 {
 		width: 45rem;
-		margin-bottom: 3rem;
-
+		margin-bottom: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 3rem;
+		width: 90%;
+		background-color: #E0DDCF;
+		
 			h2 {
 				font-size: 3.5rem;
 			}
 
 			p {
 				font-size: 3rem;
+				background-color: #B592A0;
+				border: @borderr;
 			}
-	}
+		}
 
-	h2 { 
-		font-size: 3.5rem;
-		margin-bottom: 1rem;
-	}
+		.mid {
+			background-color: #BCC4DB;
+		}
+
+		h2 { 
+			font-size: 3.5rem;
+			margin-bottom: 1rem;
+			
+		}
 
 	.box2 {
 		width: 40rem;
 		margin-bottom: .5rem;
-
-			h3 {
-				font-size: 2.5rem;
+		border: @borderr;
+		width: 90%;
+		background-color: #BBC8CA;
+		
+		
+	
+		p {
+			font-size: 2rem;
+			line-height: 2.5rem;
+			
 			}
-			p {
-				font-size: 2rem;
 		}
 	}
-}
 
 .bottom {
 	.custom-layout (flex-end, flex-end);
@@ -164,7 +185,7 @@ header	h3 {
 	}
 
 	.box2 {
-		width: 110rem;
+		width: 120rem;
 		background-color: #D7C9FF;
 		margin-bottom: 1rem;
 		border: @borderr;
