@@ -1,7 +1,7 @@
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -17,161 +17,209 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;	
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-	font-size: 62.5%;
-	}
+height: 100%;
+font-size: 62.5%;
+}
 
 #wrapper {
-	width: 90%;
-	margin: 0 auto;
+width: 90%;
+margin: 0 auto;
 }
 
 .centered-layout() { 
 display: flex;
-flex-flow: row wrap; 
+flex-flow: column wrap; 
+justify-content: center;
+align-content: center;
 }
 
+.box-content () {
+	font-size: 2.5rem;
+	width: 50rem; 
+} 
+
 .boxes() {
-	width: 90%;
-	height: 2px;
-	.animation-slide();
+width: 100%;
+height: 2px;
+.animation-slide();
 }
 
 .animation-slide() {
-    animation-name: slidein; 
-    animation-duration: 5s;
-	
+animation-name: slidein; 
+animation-duration: 5s;
+
 
 @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 90%;
-        }
-    to {
-        margin-right: 0%;
-        width: 90%;
-        }
-    }
+	from {
+		margin-left: 100%;
+		width: 100%;
+	}
+	to {
+		margin-right: 0%;
+		width: 100%;
+	}
+}	
 }
+
+
 
 .nav-bar {
 	.centered-layout();
 	justify-content: flex-end;
 	word-spacing: 5rem;
 
-	nav {
+		nav {
 		font-size: 1.4rem;
 		}
-		a {
-		text-decoration: none;
-		color: black;
-		}
+			a {
+			text-decoration: none;
+			color: black;
+			}
 	}
 
-	header { 
-		 border: 1px solid black; 
-	background: silver;
+header { 
+	border-radius: 2rem;
+	background: #f7fdff;
 	padding-bottom: 3rem;
 	.top-header {
-		border: 1px solid black;
+		
+		.box1 {
+		.boxes();
+		background-color: red;
+		}
+
+		.box2 {
+		.boxes();
+		background-color: orange;
+		}
+
+		.box3 {
+		.boxes();
+		background-color: yellow;
+		}
+
+		.box4 {
+		.boxes();
+		background-color: green;
+		}
+
+		.box5 {
+		.boxes();
+		background-color: blue;
+		}
+
+		.box6 {
+		.boxes();
+		background-color: indigo;
+		}
+
 
 			.pride {
-		width: 30rem;
-		border-radius: 50%;
-		margin: 2.5rem;
-		border: 1px solid black;
-	}
-	}
-
-	h1 {
-		font-size: 3rem;
-		margin: 1.5rem;
-	}
-	h3 {
-		font-size: 2rem;
-		margin: 1rem;
-		border-bottom: 1px solid black;
-	
-	}
-		header .btmheader {
-			display:flex;
-			flex-flow: column wrap;
-		}
-
-		.btm-header {
-			font-size: 1.5rem;
-			width: 400px;
-		
-		button {
-		     width: 10rem;
-			height: 3rem;
-			background-color: grey;
-			color: white;
-			font-weight: bold;
+			width: 30rem;
+			border-radius: 50%;
+			margin: 2.5rem;
 			border: 1px solid black;
+			box-shadow: 5px 5px;
+			}
 		}
-		}
-	}
 
-	.middle {
+				h1 {
+				font-size: 5rem;
+				margin: 1.5rem;
+				}
+				h3 {
+					font-size: 2rem;
+					margin: 1rem;
+					padding-bottom: .5rem;
+					border-bottom: 1px solid black;
+
+							}
+							header .btmheader {
+							display:flex;
+							flex-flow: column wrap;
+							}
+
+							.btm-header {
+							font-size: 1.5rem;
+							width: 400px;
+							margin-top: 1rem;
+
+						button {
+						width: 10rem;
+						height: 3rem;
+						background-color: grey;
+						color: white;
+						font-weight: bold;
+						border: 1px solid black;
+						margin-top: 2rem;
+						}
+						}
+						}
+
+			.middle {
+			.centered-layout();
+			margin-top: 3rem;
+
+			.box1 {
+			.box-content ();
+			}
+
+			.box2 {
+			.box-content ();
+
+			}
+
+			h2 {
+				font-size: 3.5rem;
+			}
+
+			li {
+			border: 1px solid lightgrey;
+			line-height: 4rem;
+			}
+			}
+
+
+.bottom {
 .centered-layout();
-justify-content: space-between;
-
-	.box1 {
-		font-size: 2.5rem;
-		width: 50rem;
-
+	.box3 {
+		.box-content ();
 	}
-
-
-
-	.box2 {
-		font-size: 2.5rem;
-		width: 50rem;
-		
-	}
-
-	li {
-		border: 1px solid black;
-		line-height: 4rem;
-	}
-	}
-
-
+}
