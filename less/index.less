@@ -59,7 +59,7 @@ font-size: 62.5%;
 }
 
 #wrapper {
-width: 90%;
+width: 800px;
 margin: 0 auto;
 background-color: #F1F2F3;
 font-family: 'Exo', sans-serif;
@@ -89,13 +89,17 @@ font-family: 'Vollkorn', serif;
 	nav {
 		word-spacing: 6rem;
 		font-size: 1.5rem;
-		
 	}
 
 	a {
 		text-decoration: none;
 		color: @color-font;
-}
+
+		&:hover {
+			color: lighten(@color-font, 60%);
+			
+		}
+ 	}
 }
 
 .top-header {
@@ -106,9 +110,15 @@ font-family: 'Vollkorn', serif;
 			font-size: 6rem;
 			margin: 2rem;
 			color: @color-font;
+			background-color: #EFF8E2;
+			padding-left: 57rem;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			border: @borderr;
+			border-radius: .5rem;
+			width: 85rem;
 			}
-}
-
+	}
 
 header	h3 {
 		font-size: 3rem;
@@ -117,18 +127,20 @@ header	h3 {
 		text-align: center;
 		border-bottom: @borderr;
 		padding-bottom: 2rem;
+		
 		}
 
 .middle {
 	.custom-layout (center, center);
 	text-align: center;
 	
+	
 	.box1 {
 		width: 45rem;
 		margin-bottom: 1rem;
 		padding-top: 1rem;
 		padding-bottom: 3rem;
-		width: 90%;
+		width: 100%;
 		background-color: #E0DDCF;
 		
 			h2 {
@@ -139,33 +151,33 @@ header	h3 {
 				font-size: 3rem;
 				background-color: #B592A0;
 				border: @borderr;
+				width: 85rem;
+				
 			}
 		}
 
 		.mid {
 			background-color: #BCC4DB;
+			width: 100%;
 		}
 
 		h2 { 
 			font-size: 3.5rem;
 			margin-bottom: 1rem;
-			
-		}
-
-	.box2 {
-		width: 40rem;
-		margin-bottom: .5rem;
-		border: @borderr;
-		width: 90%;
-		background-color: #BBC8CA;
-		
-		
-	
-		p {
-			font-size: 2rem;
-			line-height: 2.5rem;
-			
 			}
+
+		.box2 {
+			margin-bottom: .5rem;
+			border: @borderr;
+			background-color: #BBC8CA;
+			width: 85rem;
+		
+			p {
+				font-size: 2rem;
+				line-height: 2.5rem;
+				
+				
+				}
 		}
 	}
 
@@ -176,7 +188,6 @@ header	h3 {
 	border-top: @borderr;
 	width: 100%;
 	
-
 	h2 { 
 		font-size: 3.5rem;
 		margin-top: 1rem;
@@ -185,7 +196,7 @@ header	h3 {
 	}
 
 	.box2 {
-		width: 120rem;
+		width: 85rem;
 		background-color: #D7C9FF;
 		margin-bottom: 1rem;
 		border: @borderr;

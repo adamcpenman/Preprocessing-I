@@ -136,7 +136,7 @@ body {
   font-size: 62.5%;
 }
 #wrapper {
-  width: 90%;
+  width: 800px;
   margin: 0 auto;
   background-color: #F1F2F3;
   font-family: 'Exo', sans-serif;
@@ -157,6 +157,9 @@ body {
   text-decoration: none;
   color: #2C363F;
 }
+.nav-bar a:hover {
+  color: #c6cfd7;
+}
 .top-header {
   display: flex;
   flex-flow: column wrap;
@@ -168,6 +171,13 @@ body {
   font-size: 6rem;
   margin: 2rem;
   color: #2C363F;
+  background-color: #EFF8E2;
+  padding-left: 57rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid #9ED0E6;
+  border-radius: 0.5rem;
+  width: 85rem;
 }
 header h3 {
   font-size: 3rem;
@@ -189,7 +199,7 @@ header h3 {
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 3rem;
-  width: 90%;
+  width: 100%;
   background-color: #E0DDCF;
 }
 .middle .box1 h2 {
@@ -199,20 +209,21 @@ header h3 {
   font-size: 3rem;
   background-color: #B592A0;
   border: 1px solid #9ED0E6;
+  width: 85rem;
 }
 .middle .mid {
   background-color: #BCC4DB;
+  width: 100%;
 }
 .middle h2 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
 }
 .middle .box2 {
-  width: 40rem;
   margin-bottom: 0.5rem;
   border: 1px solid #9ED0E6;
-  width: 90%;
   background-color: #BBC8CA;
+  width: 85rem;
 }
 .middle .box2 p {
   font-size: 2rem;
@@ -234,7 +245,7 @@ header h3 {
   margin-bottom: 1rem;
 }
 .bottom .box2 {
-  width: 120rem;
+  width: 85rem;
   background-color: #D7C9FF;
   margin-bottom: 1rem;
   border: 1px solid #9ED0E6;
