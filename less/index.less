@@ -1,7 +1,7 @@
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -17,43 +17,215 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;	
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+height: 100%;
+font-size: 62.5%;
 }
 
+#wrapper {
+width: 800px;
+margin: 0 auto;
+background-color: #F1F2F3;
+font-family: 'Exo', sans-serif;
+font-family: 'Vollkorn', serif;
+
+
+}
+
+.custom-layout(@j, @a) {
+	display: flex;
+	flex-flow: column wrap; 
+	justify-content: @j; 
+	align-content: @a;
+}
+
+@borderr: 1px solid #9ED0E6;
+
+@color-font: #2C363F;
+
+
+
+.nav-bar {
+	.custom-layout (center, center);
+	// background-color: #8B8BAE;
+	border: @borderr;
+
+	nav {
+		word-spacing: 6rem;
+		font-size: 1.5rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: @color-font;
+
+		&:hover {
+			color: lighten(@color-font, 60%);
+			
+		}
+ 	}
+}
+
+.top-header {
+	.custom-layout (flex-end, flex-end);
+	border-bottom: @borderr;
+
+		h1 {
+			font-size: 6rem;
+			margin: 2rem;
+			color: @color-font;
+			background-color: #EFF8E2;
+			padding-left: 57rem;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			border: @borderr;
+			border-radius: .5rem;
+			width: 85rem;
+			}
+	}
+
+header	h3 {
+		font-size: 3rem;
+		margin: 2rem;
+		color:@color-font;
+		text-align: center;
+		border-bottom: @borderr;
+		padding-bottom: 2rem;
+		
+		}
+
+.middle {
+	.custom-layout (center, center);
+	text-align: center;
+	
+	
+	.box1 {
+		width: 45rem;
+		margin-bottom: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 3rem;
+		width: 100%;
+		background-color: #E0DDCF;
+		
+			h2 {
+				font-size: 3.5rem;
+			}
+
+			p {
+				font-size: 3rem;
+				background-color: #B592A0;
+				border: @borderr;
+				width: 85rem;
+				
+			}
+		}
+
+		.mid {
+			background-color: #BCC4DB;
+			width: 100%;
+		}
+
+		h2 { 
+			font-size: 3.5rem;
+			margin-bottom: 1rem;
+			}
+
+		.box2 {
+			margin-bottom: .5rem;
+			border: @borderr;
+			background-color: #BBC8CA;
+			width: 85rem;
+		
+			p {
+				font-size: 2rem;
+				line-height: 2.5rem;
+				
+				
+				}
+		}
+	}
+
+.bottom {
+	.custom-layout (flex-end, flex-end);
+	text-align: right;
+	background-color: #B8B3E9;
+	border-top: @borderr;
+	width: 100%;
+	
+	h2 { 
+		font-size: 3.5rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		
+	}
+
+	.box2 {
+		width: 85rem;
+		background-color: #D7C9FF;
+		margin-bottom: 1rem;
+		border: @borderr;
+
+		h3 {
+			font-size: 2.5rem;
+		}
+		p {
+				font-size: 2rem;
+		}
+}
+}
+
+footer {
+	margin-top: 2rem;
+	background-color: #8B8BAE;
+
+	.btm-nav-bar {
+		padding-top: 3rem;
+		border: @borderr;
+
+		nav {
+		word-spacing: 8rem;
+		font-size: 1.5rem;
+	}
+
+		a {
+			text-decoration: none;
+			color: #424342;
+			}		
+		}
+	}
